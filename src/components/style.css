@@ -1,0 +1,103 @@
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    position: relative;
+
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 0.35em;
+
+    color: transparent;
+
+    background: linear-gradient(135deg,
+            #ffffff 0%,
+            #ff66d9 30%,
+            #ff4fd8 60%,
+            #ffffff 100%);
+
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+
+    animation:
+        gradientMove 8s ease infinite,
+        float 5s ease-in-out infinite;
+
+    transition: all .4s ease;
+}
+
+/* Glow Layer */
+.logo-text::before {
+    content: "ZENSON";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: -1;
+
+    color: #ff4fd8;
+
+    filter: blur(25px);
+
+    opacity: .8;
+
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Hover */
+.logo:hover .logo-text {
+    transform: scale(1.05);
+
+    text-shadow:
+        0 0 30px rgba(255, 79, 216, .8),
+        0 0 60px rgba(255, 79, 216, .5),
+        0 0 120px rgba(255, 79, 216, .3);
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
