@@ -72,9 +72,12 @@ const Content = () => {
                         <p className="mt-3 text-zinc-600 text-xs">
                             NoSQL • Real-time • Scalable
                         </p>
-                        <button className="mt-6 text-white text-sm border-b border-white/20 hover:border-white">
-                            View More
-                        </button>
+                        <a href="/eco-system/coconutdb">
+                            <button className="mt-6 text-white text-sm border-b border-white/20 hover:border-white">
+                                View More
+                            </button>
+                        </a>
+
                     </div>
 
                     <div className="border border-white/10 p-8 hover:border-white transition-all duration-300">
@@ -86,9 +89,13 @@ const Content = () => {
                         <p className="mt-3 text-zinc-600 text-xs">
                             APIs • Microservices • Edge-ready
                         </p>
-                        <button className="mt-6 text-white text-sm border-b border-white/20 hover:border-white">
-                            View More
-                        </button>
+
+                        <a href="/eco-system/coconutServeJS">
+                            <button className="mt-6 text-white text-sm border-b border-white/20 hover:border-white">
+                                View More
+                            </button>
+                        </a>
+
                     </div>
 
                     <div className="border border-white/10 p-8 hover:border-white transition-all duration-300">
@@ -100,9 +107,13 @@ const Content = () => {
                         <p className="mt-3 text-zinc-600 text-xs">
                             AI • Runtime • Adaptive UI
                         </p>
-                        <button className="mt-6 text-white text-sm border-b border-white/20 hover:border-white">
-                            View More
-                        </button>
+
+                        <a href="/eco-system/ai-framework">
+                            <button className="mt-6 text-white text-sm border-b border-white/20 hover:border-white">
+                                View More
+                            </button>
+                        </a>
+
                     </div>
 
                 </div>
