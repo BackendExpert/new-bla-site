@@ -127,15 +127,12 @@ const Navbar = () => {
                     <nav className="hidden lg:flex items-center gap-10">
                         {navmenu.map((item) => (
                             <div key={item.id} className="relative group">
-                                <a
-                                    href={item.link || "#"}
-                                    className="flex items-center gap-2 text-white font-medium hover:text-cyan-400 transition"
-                                >
+                                  <div className="flex items-center gap-2 text-white font-medium hover:text-cyan-400 transition">
                                     {item.name}
                                     {item.submenu && (
                                         <FaChevronDown className="text-xs transition group-hover:rotate-180" />
                                     )}
-                                </a>
+                                </div>
 
                                 {item.submenu && (
                                     <div className="absolute left-1/2 top-full mt-8 w-[600px] -translate-x-1/2 invisible opacity-0 translate-y-4 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">

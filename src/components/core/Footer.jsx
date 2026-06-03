@@ -124,9 +124,12 @@ const Footer = () => {
                             Research, experimentation, and relentless engineering focused entirely on our own ecosystem.
                         </p>
 
-                        <button className="mt-8 border border-white/20 px-8 py-3 rounded-full text-white hover:scale-105 transition-all duration-300">
-                            Explore Ecosystem
-                        </button>
+                        <a href="/eco-system">
+                            <button className="mt-8 border border-white/20 px-8 py-3 rounded-full text-white hover:scale-105 transition-all duration-300">
+                                Explore Ecosystem
+                            </button>
+                        </a>
+
                     </div>
 
                 </div>
