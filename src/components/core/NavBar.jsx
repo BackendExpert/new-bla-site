@@ -60,12 +60,12 @@ const Navbar = () => {
             submenu: [
                 {
                     name: "NPMs",
-                    link: "#",
+                    link: "/dev-tools/#npms",
                     shortdesc: "Custom Node Package Managers",
                 },
                 {
                     name: "VScode Extensions",
-                    link: "#",
+                    link: "/dev-tools/#vscode",
                     shortdesc: "Custom Visual Studio Code Extensions",
                 },
             ],
@@ -73,11 +73,11 @@ const Navbar = () => {
         {
             id: 3,
             name: "Products",
-            link: "/dev-tools",
+            link: "/products",
             submenu: [
                 {
                     name: "Custom APIs",
-                    link: "#",
+                    link: "/products",
                     shortdesc: "Custom Application Programming Interface",
                 },
             ],
@@ -88,17 +88,17 @@ const Navbar = () => {
             submenu: [
                 {
                     name: "Company",
-                    link: "#",
+                    link: "/company",
                     shortdesc: "Who we are & what we build",
                 },
                 {
                     name: "Publications",
-                    link: "#",
+                    link: "/publications",
                     shortdesc: "Reseach-Driven Software Publications",
                 },
                 {
                     name: "Founder's Note",
-                    link: "#",
+                    link: "/founder",
                     shortdesc: "Architecting a sovereign developer workspace",
                 },
             ],
